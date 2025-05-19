@@ -7,94 +7,82 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <img src="headshot.jpg" alt="Maile Look Headshot" class="headshot" />
-      <h1>Maile Look</h1>
-      <p>Computer Science Major | Business Information Systems Minor | Oregon State University</p>
-      <p>Oregon State Cheerleader | Future Sales Engineer</p>
+  <header class="hero">
+    <div class="overlay">
+      <div class="container">
+        <img src="headshot.jpg" alt="Maile Look Headshot" class="headshot" />
+        <h1 class="hero-title">Maile Look</h1>
+        <p class="hero-subtitle">Computer Science Major | Business Information Systems Minor</p>
+        <p class="hero-subtitle">Oregon State Cheerleader | Future Sales Engineer</p>
+        <a href="#about" class="button">Learn More</a>
+      </div>
     </div>
   </header>
 
-  <section class="intro">
-    <h2>Welcome</h2>
+  <section id="about" class="section">
+    <h2>About Me</h2>
     <p>
-      I'm Maile Look, a senior at Oregon State University majoring in Computer Science with a minor in Business Information Systems. I’m passionate about using technology—especially AI and data science—to improve people’s lives and empower businesses. My experiences span both technical and interpersonal domains: I’ve built machine learning pipelines, pitched software tools to executive teams, led large-scale campus events, and served as a cheerleader representing OSU with pride and energy. I strive to blend empathy with engineering, curiosity with communication, and analytics with action. Whether I’m working on an AI project or guiding a campus tour, I bring focus, leadership, and an enthusiasm for connecting people and ideas.
+      I'm Maile Look, a senior at Oregon State University majoring in Computer Science and minoring in Business Information Systems. I combine technical knowledge with strong interpersonal skills, working at the intersection of data, AI, and user experience. I'm passionate about creating accessible solutions, mentoring others, and using technology to drive meaningful change. My journey as a cheerleader, student leader, and engineer reflects my dedication to both precision and people.
     </p>
   </section>
 
-  <section class="skills">
+  <section class="section">
     <h2>Skills & Coursework</h2>
     <p><strong>Languages:</strong> Python, C++, Java, SQL</p>
     <p><strong>Tools & Libraries:</strong> Git, Docker, Tableau, JIRA, spaCy, NLTK, RAKE, Microsoft Copilot</p>
-    <p><strong>Relevant Courses:</strong> Algorithms & Data Structures, Databases, Operating Systems, Software Engineering, Web Development, Cybersecurity, Network Security, Parallel Programming</p>
+    <p><strong>Courses:</strong> Algorithms & Data Structures, Databases, Operating Systems, Software Engineering, Web Development, Cybersecurity, Network Security, Parallel Programming</p>
   </section>
 
-  <section class="experience">
+  <section class="section">
+    <h2>Passions</h2>
+    <p>I’m passionate about AI, ethical technology, women in STEM, storytelling with data, and empowering others through knowledge-sharing. Whether it’s presenting an AI project or supporting teammates on the sidelines, I bring intention and energy to every space I enter.</p>
+  </section>
+
+  <section class="section">
     <h2>Experience</h2>
-    <div>
-      <h3><a href="https://www.smxtech.com/" target="_blank">SMX</a> – Data Science & Software Engineering Intern</h3>
-      <p>At SMX, I worked on a team of interns to build natural language processing tools to identify patterns in large datasets. Using Python, spaCy, and NLTK, we developed keyword extraction systems that helped detect signs of human trafficking. This experience deepened my skills in data science and teamwork.</p>
+    <div class="card">
+      <h3><a href="https://www.smxtech.com/" target="_blank">SMX – Data Science & Software Engineering Intern</a></h3>
+      <p>Built Python NLP pipelines to extract insights from unstructured data. Helped identify trafficking patterns in South America using spaCy and NLTK with a team of interns.</p>
     </div>
-    <div>
-      <h3><a href="https://www.cpb.bank/" target="_blank">Central Pacific Bank</a> – Information Technology Intern</h3>
-      <p>I worked with the CTO, Salesforce engineers, and loan officers to integrate Microsoft Copilot into the bank’s CRM system. I created a business implementation plan, pitched the solution to the CEO, and trained employees on the workflow—gaining exposure to technical leadership and enterprise tools.</p>
+    <div class="card">
+      <h3><a href="https://www.cpb.bank/" target="_blank">Central Pacific Bank – IT Intern</a></h3>
+      <p>Worked with the CTO and Salesforce engineers to integrate Microsoft Copilot into CRM systems. Pitched the solution to the CEO and led training sessions for loan officers.</p>
     </div>
-    <div>
-      <h3>Oregon State University – Program Day Coordinator</h3>
-      <p>As Program Day Coordinator, I led 60 employees to plan and execute events that hosted over 5,000 guests. I built schedules, coordinated with university departments, and solved real-time challenges—strengthening my project management and leadership abilities.</p>
+    <div class="card">
+      <h3>OSU – Program Day Coordinator</h3>
+      <p>Managed a 60-person team to host events for 5,000+ visitors. Coordinated schedules and logistics with over 30 departments.</p>
     </div>
-    <div>
-      <h3>Oregon State University – Tour Ambassador</h3>
-      <p>I guided prospective students, families, and professionals through campus, tailoring tours to diverse audiences. This experience improved my public speaking, interpersonal skills, and ability to communicate technical information clearly.</p>
+    <div class="card">
+      <h3>OSU – Tour Ambassador</h3>
+      <p>Led daily campus tours and engaged with prospective students, families, and professionals to promote Oregon State University.</p>
     </div>
-    <div>
-      <h3>Oregon State Cheerleading</h3>
-      <p>As a cheerleader, I represented OSU at athletic and community events. This role taught me discipline, time management, teamwork, and how to perform under pressure while supporting school spirit.</p>
+    <div class="card">
+      <h3>OSU – Cheerleader</h3>
+      <p>Represented OSU at athletic and community events. Developed resilience, time management, and team-building under pressure.</p>
     </div>
   </section>
 
-  <section class="projects">
+  <section class="section">
     <h2>Projects</h2>
-
-    <div class="project">
-      <h3><a href="https://github.com/Steve-Akiyama/CS-Capstone-Group-2" target="_blank">AI-Integrated Studying Tool (Senior Capstone)</a></h3>
-      <p>
-        Developed with GPT-4, Llama 3, and RAG techniques, this platform adapts to student responses and generates feedback and new questions. Pitched and tested with university faculty and students to promote AI-driven education.
-      </p>
+    <div class="card">
+      <h3><a href="https://github.com/Steve-Akiyama/CS-Capstone-Group-2" target="_blank">AI-Integrated Studying Tool</a></h3>
+      <p>Used GPT-4, Llama 3, and RAG to build a platform for adaptive feedback in student learning. Presented to psychology faculty and tested in-classroom environments.</p>
     </div>
-
-    <div class="project">
-      <h3><a href="https://github.com/lookm8000/SMX_Internship" target="_blank">Human Trafficking Detection using NLP</a></h3>
-      <p>
-        Used spaCy and NLTK to extract key phrases from intelligence reports and social data, building a tool to help analysts track trafficking patterns in South America. Focused on unstructured data processing and keyword prioritization.
-      </p>
+    <div class="card">
+      <h3><a href="https://github.com/lookm8000/SMX_Internship" target="_blank">Human Trafficking Detection with NLP</a></h3>
+      <p>Built keyword extraction tools using RAKE, spaCy, and NLTK. Helped track trafficking patterns from regional reports in South America.</p>
     </div>
-
-    <div class="project">
-      <h3>CRM Automation with Microsoft Copilot</h3>
-      <p>
-        Proposed and implemented a Copilot-Salesforce integration to automate data entry for loan officers. Created a rollout plan and presented the technical solution to both IT leaders and end users at Central Pacific Bank.
-      </p>
+    <div class="card">
+      <h3>CRM Automation</h3>
+      <p>Designed and implemented a Copilot-Salesforce integration. Streamlined CRM processes for loan officers at Central Pacific Bank.</p>
     </div>
   </section>
 
-  <section class="contact">
+  <section class="section">
     <h2>Contact</h2>
     <p>Email: mlook8000@gmail.com</p>
     <p>Phone: (808) 428-7718</p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/maile-look/" target="_blank">maile-look</a></p>
-  </section>
-
-  <section class="bibliography">
-    <h2>Bibliography</h2>
-    <ul>
-      <li>GPT-4 – OpenAI: <a href="https://openai.com/gpt-4" target="_blank">https://openai.com/gpt-4</a></li>
-      <li>Llama 3 – Meta AI: <a href="https://ai.meta.com/llama/" target="_blank">https://ai.meta.com/llama/</a></li>
-      <li>spaCy NLP: <a href="https://spacy.io/" target="_blank">https://spacy.io/</a></li>
-      <li>NLTK: <a href="https://www.nltk.org/" target="_blank">https://www.nltk.org/</a></li>
-      <li>Microsoft Copilot: <a href="https://www.microsoft.com/en-us/microsoft-copilot" target="_blank">Microsoft Copilot</a></li>
-    </ul>
   </section>
 
   <footer>
